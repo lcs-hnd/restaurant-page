@@ -33,6 +33,13 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.(mp4|webm)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: 'assets/videos/[name][ext]'
+        }
+      },
     ],
   },
 };

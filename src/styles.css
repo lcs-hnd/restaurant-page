@@ -23,7 +23,7 @@ body::before {
   width: 100%;
   height: 100%;
 
-  z-index: -1;
+  z-index: -2;
 
   background-image: url('./assets/splash.webp');
   background-size: cover;
@@ -32,6 +32,32 @@ body::before {
 
   filter: blur(.5px) contrast(1.1);
   transform: scale(1.1);
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
 }
 
 /** Logo, Navigation */
@@ -43,11 +69,13 @@ header {
   /* gap: 10vw; */
 }
 
-header span {
+header .logo {
   color: white;
+
   font-family: "playfair", serif;
   font-size: clamp(2rem, 6vw, 3rem);
   font-style: italic;
+
   padding-left: 20px;
   width: 20vw;
 }
@@ -55,19 +83,17 @@ header span {
 nav {
   display: flex;
   justify-content: center;
+
   flex-grow: 1;
-  
-  /* padding-top: 5px; */
+
   gap: 5vw;
-
-
 }
 
 .nav-wrapper {
   display: inline-flex;
   background-color: rgb(0, 0, 0);
   gap: 5vw;
-  padding: 5px 70px 5px 70px;
+  padding: 5px 5vw 5px 5vw;
 }
 
 nav button {
@@ -135,7 +161,37 @@ nav button:hover::after {
   transform: scaleX(.95);
 }
 
+.hamburger-menu {
+  display: none;
 
+  flex-direction: column;
+  justify-content: space-around;
+
+
+  width: 2rem;
+  height: 2rem;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+  
+  padding: 0;
+  z-index: 10;
+}
+
+.hamburger-menu span {
+  display: flex;
+
+  width: 2rem;
+  height: 2px;
+
+  background: rgb(255, 255, 255);
+
+  border-radius: 2px;
+
+  transition: all 0.3s ease-in-out;
+}
 
 #content {
   display: flex;
@@ -143,4 +199,84 @@ nav button:hover::after {
   justify-content: center;
   flex-direction: column;
   flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+
+  /** hide the desktop navigation and reservation button */
+  .nav-wrapper,
+  .reservation-wrapper {
+    display: none;
+  }
+
+  /** show the hamburguer menu button */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /** adjust logo to be more flexible */
+  header .logo {
+    text-align: center;
+    width: 100vw;
+    font-size: clamp(4rem, 6vw, 4rem);
+    padding-left: 0px;
+  }
+
+  /** reposition and style the nav for the mobile overlay */
+  nav {
+    display: flex;
+    
+    max-height: 100px;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    
+    opacity: 0;
+    transition: max-height 0.1s ease-in-out, 0.4s ease-in-out;
+  }
+
+  /** when the menu is active, bring it into view */
+  nav.is-active {
+    padding-top: 10px;
+    max-height: 200px;
+    opacity: 1;
+  }
+
+  /** re-show the nav-wrapper inside the active overlay */
+  nav.is-active .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: transparent;
+
+    gap: 10px;
+    padding: 0;
+  }
+
+  nav.is-active .nav-wrapper button {
+    font-size: 1.2rem; 
+    background-color: black;
+    padding: 1px 4vw 1px 4vw;
+  }
+  
+  /** animate the hamburger into an "X" when active */
+  .hamburger-menu.is-active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-menu.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.is-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+  }
 }
