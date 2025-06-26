@@ -112,6 +112,9 @@ body::before {
 
   /* >visuals */
   overflow: hidden;
+
+  /* >effects */
+  transform: scale(1.01); /* 'used to fix the gap from subpixel rendering */
 }
 
 .video-background video {
@@ -291,6 +294,7 @@ nav button:hover::after {
 
   /* >visuals */
   background: transparent;
+  -webkit-tap-highlight-color: transparent;
 
   /* >interaction */
   cursor: pointer;
@@ -309,14 +313,18 @@ nav button:hover::after {
   background: rgb(255, 255, 255);
 
   /* >animation */
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.5s ease;
+}
+
+.hamburger-menu span:nth-child(2) {
+  transition: opacity 1.5s ease; /* 'independent speed for 2nd span */
 }
 
 /*$ ------------ 6.0 - Responsive Styles (max-width: 768px) ------------ */
 
 @media (max-width: 768px) {
   /** ------ General Layout & Visibility ------ */
-  .nav-wrapper,
+
   .reservation-wrapper {
     display: none;
   }
@@ -346,21 +354,16 @@ nav button:hover::after {
     align-items: center;
 
     /* >box model - visuals */
-    max-height: 100px;
+    max-height: 50px;
     overflow: hidden;
     opacity: 0;
+    padding-top: 10px;
 
     /* >animation */
-    transition: max-height 0.1s ease-in-out, opacity 0.4s ease-in-out;
+    transition: max-height 0.2s ease-in, opacity 0.2s ease;
   }
 
-  nav.is-active {
-    padding-top: 10px;
-    max-height: 200px;
-    opacity: 1;
-  }
-
-  nav.is-active .nav-wrapper {
+  nav .nav-wrapper {
     /* >display & layout */
     display: flex;
     flex-direction: column;
@@ -372,10 +375,15 @@ nav button:hover::after {
     background-color: transparent;
   }
 
-  nav.is-active .nav-wrapper button {
+  nav button {
     font-size: 1.2rem;
     background-color: black;
     padding: 1px 4vw 1px 4vw;
+  }
+
+  nav.is-active {
+    max-height: 200px;
+    opacity: 1;
   }
 
   /** ------ Hamburger Animation ------ */
@@ -384,6 +392,7 @@ nav button:hover::after {
   }
 
   .hamburger-menu.is-active span:nth-child(2) {
+    transition: opacity 0.125s ease;
     opacity: 0;
   }
 

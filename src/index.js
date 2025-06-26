@@ -1,6 +1,30 @@
 // index.js
+
+'use strict';
+
 import "./styles.css";
 
+import mobileVideo from './assets/background-mobile.mp4';
+import desktopVideo from './assets/background-desktop.mp4';
+
+function loadResponsiveVideo() {
+  const video = document.querySelector('.video-background video');
+  if(!video) return;
+
+  const videoSource = document.createElement('source');
+  
+  if(window.matchMedia("(max-width: 768px)").matches) {
+    videoSource.setAttribute('src', mobileVideo);
+  } else {
+    videoSource.setAttribute('src', desktopVideo);
+  }
+
+  videoSource.setAttribute('type', 'video/mp4');
+
+  video.appendChild(videoSource)
+  video.load();
+  video.play();
+}
 
 // wait for doc to load
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,4 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initialLoad.classList.add('is-loaded');
   header.classList.add('is-loaded');
+  loadResponsiveVideo();
 });
