@@ -203,6 +203,8 @@ nav button {
 
   /* >typography */
   color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 125;
   font-size: clamp(1rem, 2vw, 1.2rem);
   white-space: nowrap;
   text-decoration: none;
@@ -354,13 +356,12 @@ nav button:hover::after {
     align-items: center;
 
     /* >box model - visuals */
-    max-height: 50px;
     overflow: hidden;
     opacity: 0;
-    padding-top: 10px;
+    margin-top: 10px;
 
     /* >animation */
-    transition: max-height 0.2s ease-in, opacity 0.2s ease;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
   nav .nav-wrapper {
@@ -381,8 +382,12 @@ nav button:hover::after {
     padding: 1px 4vw 1px 4vw;
   }
 
+  nav button:hover::after {
+    transform: scaleX(1);
+  }
+
   nav.is-active {
-    max-height: 200px;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
     opacity: 1;
   }
 
