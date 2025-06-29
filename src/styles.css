@@ -36,7 +36,8 @@ body {
   min-height: 100vh;
 
   /* >visuals  */
-  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /*$ ------------ 2.0 - Page Load & Transitions ------------ */
@@ -162,6 +163,7 @@ header {
 
   /* >box model */
   padding-top: 1.5%;
+
   /* >animation */
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
@@ -672,17 +674,19 @@ footer a:hover {
   }
 
   .menu-wrapper {
-    /*' some swiper additions for swiper */
     overflow: hidden;
-    position: relative;
-    /* >box model */
-    max-width: 90%;
 
+    /* >box model */
+    position: relative;
+    max-width: 90%;
     max-height: 90%;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .menu-pagination {
+    height: 2%;
+  }
   /** ------ Hamburger Animation ------ */
   .hamburger-menu.is-active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);

@@ -207,23 +207,23 @@ class navOptions {
           <div class="menu-starter">
             <span class="menu-title"><span>Drinks & Saké</span></span>
             <div class="menu-item">
-              <span class="dish-name"><span>Dassai "45" (Junmai Daiginjo)  25/btl</span></span>
+              <span class="dish-name"><span>Dassai "45" (Junmai Daiginjo) 25/BTL</span></span>
               <span class="dish-description"><span>Smooth and fragrant with notes of crisp apple and white peach.</span></span>
             </div>
             <div class="menu-item">
-              <span class="dish-name"><span>Kikusui "Chrysanthemum Water" (Junmai Ginjo)  18/btl</span></span>
+              <span class="dish-name"><span>Kikusui (Junmai Ginjo) 18/BTL</span></span>
               <span class="dish-description"><span>A light, crisp, and dry saké with a refreshing finish.</span></span>
             </div>
             <div class="menu-item">
-              <span class="dish-name"><span>Hakutsuru "Superior" (Junmai Ginjo)  14/btl</span></span>
+              <span class="dish-name"><span>Hakutsuru "Superior" (Junmai Ginjo) 14/BTL</span></span>
               <span class="dish-description"><span>Floral and fragrant, named for the elegant white crane.</span></span>
             </div>
             <div class="menu-item">
-              <span class="dish-name"><span>Yuzu Highball  16</span></span>
+              <span class="dish-name"><span>Yuzu Highball 16</span></span>
               <span class="dish-description"><span>Suntory Toki Whisky, fresh yuzu juice, and sparkling water.</span></span>
             </div>
             <div class="menu-item">
-              <span class="dish-name"><span>Matcha (Ceremonial Grade)  8</span></span>
+              <span class="dish-name"><span>Matcha (Ceremonial Grade) 14</span></span>
               <span class="dish-description"><span>Prepared traditionally, offering a rich and umami-filled experience.</span></span>
             </div>
           </div>
