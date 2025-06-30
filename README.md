@@ -16,7 +16,7 @@
 
    
    <p align="center">
-    A dynamic and responsive landing page for a modern restaurant, built with vanilla JavaScript and Webpack.
+    A dynamic and responsive landing page for a modern restaurant, built with JavaScript and Webpack.
     <br>
     <br>
      <a align="center" href="https://yunai-website.netlify.app"><strong>View Live Demo</strong></a>
