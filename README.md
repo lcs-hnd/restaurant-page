@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://yunai-website.netlify.app/">
+  <a href="https://yunai-dining.netlify.app/">
     </a>
 
-  <h1 align="center">YUNAI Restaurant Page</h1>
+  <h1 align="center">YUNAI Dining Page</h1>
  
 <p align="center">
   <img src='https://github.com/user-attachments/assets/15cb6124-6644-4ee3-8bf0-ecb850deac30'>
@@ -19,7 +19,7 @@
     A dynamic and responsive landing page for a modern restaurant, built with JavaScript and Webpack.
     <br>
     <br>
-     <a align="center" href="https://yunai-website.netlify.app"><strong>View Live Demo</strong></a>
+     <a align="center" href="https://yunai-dining.netlify.app"><strong>View Live Demo</strong></a>
   </p>
   <h3 align="center">Built With</h3>
   
@@ -31,7 +31,7 @@
   <img src="https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
 </p>
   
-## Features
+<h2 align="left">Features</h2>
 
 - **Fully Responsive:** Optimized for a seamless experience on desktop, tablet, and mobile devices.
 - **Dynamic Content:** JavaScript-powered logic loads Menu, Contact, and Location pages without a page refresh.
@@ -39,7 +39,6 @@
 - **Performant Video Background:** Utilizes different videos and a JavaScript loader to ensure fast, efficient video playback on any device, fixing common race conditions on mobile.
 
 
-<br>
 
 <h2 align="left">Code Practices & Maintainability</h2>
 
@@ -85,7 +84,7 @@ You need to have Node.js and npm installed on your machine.
 
 1. Clone the repository to your local machine:
     ```sh
-    git clone https://github.com/lcs-hnd/yunai-page.git
+    git clone https://github.com/lcs-hnd/yunai-dining.git
     ```
 2. Navigate into the project directory:
     ```sh
