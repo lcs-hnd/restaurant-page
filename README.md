@@ -42,7 +42,7 @@
 
 <h2 align="left">Code Practices & Maintainability</h2>
 
-<p align="center">
+<p align="right">
   <img src="https://github.com/user-attachments/assets/1f9416ed-0de0-4018-ac83-bc015074e137" alt="Mobile Demo GIF" width="250" align="right">
 </p>
 
