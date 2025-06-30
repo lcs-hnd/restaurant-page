@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/lcs-hnd/restaurant-page" alt="Repo size"/>
-  <img src="https://img.shields.io/github/license/lcs-hnd/restaurant-page" alt="License"/>
-  <img src="https://img.shields.io/github/last-commit/lcs-hnd/restaurant-page" alt="Last commit"/>
+  <img src="https://img.shields.io/github/repo-size/lcs-hnd/yunai-dining" alt="Repo size"/>
+  <img src="https://img.shields.io/github/license/lcs-hnd/yunai-dining" alt="License"/>
+  <img src="https://img.shields.io/github/last-commit/lcs-hnd/yunai-dining" alt="Last commit"/>
 </p>
 
 <p align="center">
