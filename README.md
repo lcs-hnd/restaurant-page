@@ -8,7 +8,7 @@
   <a href="https://yunai-dining.netlify.app/">
     </a>
 
-  <h1 align="center">YUNAI Dining Page</h1>
+  <h1 align="center">Yunai Restaurant Page</h1>
  
 <p align="center">
   <img src='https://github.com/user-attachments/assets/15cb6124-6644-4ee3-8bf0-ecb850deac30'>
@@ -88,7 +88,7 @@ You need to have Node.js and npm installed on your machine.
     ```
 2. Navigate into the project directory:
     ```sh
-    git clone https://github.com/lcs-hnd/restaurant-page.git
+    cd .../yunai-dining
     ```
 3. Install the necessary NPM packages:
     ```sh
@@ -99,4 +99,4 @@ You need to have Node.js and npm installed on your machine.
     npm run start
     ```
 
-    This will open the project on `http://localhost:8080`.
+This will open the project on `http://localhost:8080`.
