@@ -4,25 +4,14 @@
   <img src="https://img.shields.io/github/last-commit/lcs-hnd/yunai-dining" alt="Last commit"/>
 </p>
 
-<p align="center">
-  <a href="https://yunai-dining.netlify.app/">
-    </a>
+<h1 align="center">Yunai Restaurant Page</h1>
 
-  <h1 align="center">Yunai Restaurant Page</h1>
+<p align="center">A dynamic and responsive landing page for a modern restaurant, built with JavaScript and Webpack.</p>
  
 <p align="center">
   <img src='https://github.com/user-attachments/assets/15cb6124-6644-4ee3-8bf0-ecb850deac30'>
 </p>
 
-   
-   <p align="center">
-    A dynamic and responsive landing page for a modern restaurant, built with JavaScript and Webpack.
-    <br>
-    <br>
-     <a align="center" href="https://yunai-dining.netlify.app"><strong>View Live Demo</strong></a>
-  </p>
-  <h3 align="center">Built With</h3>
-  
 <p align="center">
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
@@ -30,7 +19,9 @@
   <img src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black" alt="Webpack"/>
   <img src="https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
 </p>
-  
+
+<p align="center"><a href="https://yunai-dining.netlify.app">View Liew Demo</a></p>
+ 
 <h2 align="left">Features</h2>
 
 - **Fully Responsive:** Optimized for a seamless experience on desktop, tablet, and mobile devices.
@@ -42,8 +33,10 @@
 
 <h2 align="left">Code Practices & Maintainability</h2>
 
+
+
 <p align="right">
-  <img src="https://github.com/user-attachments/assets/1f9416ed-0de0-4018-ac83-bc015074e137" alt="Mobile Demo GIF" width="250" align="right">
+  <img src='https://github.com/user-attachments/assets/80e3c9e6-a2b0-4e21-88e2-3ce2a5765355'  width="250px" align="right">
 </p>
 
 
@@ -88,7 +81,7 @@ You need to have Node.js and npm installed on your machine.
     ```
 2. Navigate into the project directory:
     ```sh
-    cd .../yunai-dining
+    cd yunai-dining
     ```
 3. Install the necessary NPM packages:
     ```sh
